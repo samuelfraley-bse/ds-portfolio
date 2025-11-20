@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name – Data Scientist Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Data science portfolio showcasing machine learning, analytics, and visualization projects.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="brand-mark">></span>
+        <span class="brand-name">Your Name</span>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Data Scientist</h1>
+        <p class="hero-tagline">
+          I build data products and analytical models that turn messy data into clear decisions.
+        </p>
+        <div class="hero-links">
+          <a class="btn" href="https://github.com/your-github" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn-outline" href="Your-CV-or-LinkedIn-URL" target="_blank" rel="noreferrer">LinkedIn / CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="section-intro">
+          A few data science projects highlighting predictive modeling, analytics, and visualization.
+        </p>
+
+        <div class="grid">
+          <!-- Project 1 -->
+          <article class="card">
+            <h3>Customer Churn Prediction</h3>
+            <p class="card-subtitle">Binary classification · Tabular data</p>
+            <p>
+              Built a model to predict which subscription users are likely to churn in the next 30 days
+              using transactional and behavioral data.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> ~75k users, 6 months of activity logs</li>
+              <li><strong>Methods:</strong> Feature engineering, XGBoost, class imbalance handling, SHAP</li>
+              <li><strong>Result:</strong> +18% recall@top10% vs logistic regression baseline</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/your-github/churn-project" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="https://your-churn-dashboard.vercel.app" target="_blank" rel="noreferrer">Live demo</a>
+              <a href="docs/churn_case_study.pdf" target="_blank" rel="noreferrer">Case study (PDF)</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card">
+            <h3>Time Series Demand Forecasting</h3>
+            <p class="card-subtitle">Forecasting · Time series</p>
+            <p>
+              Forecasted weekly product demand to improve inventory planning and reduce stockouts.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> 3 years of sales for 200+ SKUs</li>
+              <li><strong>Methods:</strong> Feature-rich regression, Prophet / SARIMA baseline, cross-validation</li>
+              <li><strong>Result:</strong> ~12% MAPE reduction vs historical moving average</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/your-github/forecasting-project" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="docs/forecasting_report.pdf" target="_blank" rel="noreferrer">Report (PDF)</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card">
+            <h3>Text Classification for Support Tickets</h3>
+            <p class="card-subtitle">NLP · Multi-class classification</p>
+            <p>
+              Automated routing of customer support tickets by predicting issue categories from free-text descriptions.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> 50k anonymized support tickets</li>
+              <li><strong>Methods:</strong> TF-IDF, linear models, BERT-based comparison, error analysis</li>
+              <li><strong>Result:</strong> Macro F1 +10pts vs rules-based system</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/your-github/nlp-tickets" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="https://your-nlp-demo.vercel.app" target="_blank" rel="noreferrer">Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>R (optional)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Data & ML</h3>
+            <ul>
+              <li>Pandas, NumPy, Scikit-learn</li>
+              <li>Gradient boosting (XGBoost/LightGBM)</li>
+              <li>Time series modeling</li>
+              <li>Experimentation & A/B testing</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Visualization</h3>
+            <ul>
+              <li>Matplotlib, Seaborn, Plotly</li>
+              <li>Dash / Streamlit (if relevant)</li>
+              <li>Tableau / Power BI (if relevant)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Deployment & Tools</h3>
+            <ul>
+              <li>Git, GitHub</li>
+              <li>FastAPI / Flask (if you use them)</li>
+              <li>Vercel / Docker (if relevant)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I'm a data scientist with experience in building end-to-end solutions:
+          from exploring messy datasets and designing features to training models,
+          evaluating them rigorously, and communicating results to non-technical stakeholders.
+        </p>
+        <p>
+          I enjoy working on problems around <em>your interests here: e.g. customer analytics,
+          forecasting, NLP, experimentation</em> and like collaborating closely with product and
+          engineering teams to turn insights into impact.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          The easiest way to reach me is by email or LinkedIn.
+        </p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">@your-handle</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/your-github" target="_blank" rel="noreferrer">@your-github</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Your Name. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Tiny enhancement: set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
