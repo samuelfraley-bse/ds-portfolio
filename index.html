@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name – Data Scientist Portfolio</title>
+  <title>Samuel Fraley – Data Science Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Data science portfolio showcasing machine learning, analytics, and visualization projects.">
+  <meta name="description" content="Data science portfolio for Samuel Fraley, focusing on sports analytics, GIS, and applied economics.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="container">
       <div class="brand">
         <span class="brand-mark">></span>
-        <span class="brand-name">Your Name</span>
+        <span class="brand-name">Samuel Fraley</span>
       </div>
       <nav class="nav">
         <a href="#projects">Projects</a>
@@ -27,14 +27,19 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <h1>Data Scientist</h1>
+        <h1>Data Scientist for Decision Making</h1>
         <p class="hero-tagline">
-          I build data products and analytical models that turn messy data into clear decisions.
+          Former Temple football player and NFL Next Gen Stats researcher, now studying Data Science for Decision Making in Barcelona. I use data, spatial analysis, and machine learning to help teams and organizations make better decisions.
         </p>
         <div class="hero-links">
-          <a class="btn" href="https://github.com/your-github" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn-outline" href="Your-CV-or-LinkedIn-URL" target="_blank" rel="noreferrer">LinkedIn / CV</a>
+          <!-- TODO: replace with your actual GitHub URL -->
+          <a class="btn" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- TODO: replace with your actual LinkedIn URL -->
+          <a class="btn-outline" href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
+        <p class="section-intro" style="margin-top:1.25rem; max-width:38rem;">
+          I’ve worked across public policy and professional sports, and I’m especially excited about roles with teams or organizations that care about rigorous, decision-focused analytics.
+        </p>
       </div>
     </section>
 
@@ -43,63 +48,198 @@
       <div class="container">
         <h2>Selected Projects</h2>
         <p class="section-intro">
-          A few data science projects highlighting predictive modeling, analytics, and visualization.
+          Work spanning NFL analytics, GIS and mobility, and applied economics / public policy.
         </p>
 
+        <!-- NFL Analytics -->
+        <h3 style="margin-top:2.25rem;">NFL Analytics</h3>
         <div class="grid">
-          <!-- Project 1 -->
+          <!-- Blitz path detection -->
           <article class="card">
-            <h3>Customer Churn Prediction</h3>
-            <p class="card-subtitle">Binary classification · Tabular data</p>
+            <h3>Blitz Path Detection from Player Tracking Data</h3>
+            <p class="card-subtitle">Tracking data · Spatial ML · Defensive strategy</p>
             <p>
-              Built a model to predict which subscription users are likely to churn in the next 30 days
-              using transactional and behavioral data.
+              Proof-of-concept model to identify defender blitzes from raw NFL player tracking data, with an emphasis on how defenders approach and attack the pocket over time.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> ~75k users, 6 months of activity logs</li>
-              <li><strong>Methods:</strong> Feature engineering, XGBoost, class imbalance handling, SHAP</li>
-              <li><strong>Result:</strong> +18% recall@top10% vs logistic regression baseline</li>
+              <li><strong>Data:</strong> High-frequency player tracking coordinates and event data across multiple games.</li>
+              <li><strong>Methods:</strong> Feature engineering on spatial-temporal trajectories, clustering and classification, feature importance analysis.</li>
+              <li><strong>Goal:</strong> Support film study and internal analytics products with automated blitz detection and labeling.</li>
             </ul>
             <div class="card-links">
-              <a href="https://github.com/your-github/churn-project" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="https://your-churn-dashboard.vercel.app" target="_blank" rel="noreferrer">Live demo</a>
-              <a href="docs/churn_case_study.pdf" target="_blank" rel="noreferrer">Case study (PDF)</a>
+              <!-- TODO: update when repo is ready -->
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/blitz-path-detection" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="docs/blitz_path_case_study.pdf" target="_blank" rel="noreferrer">Case study (PDF)</a>
             </div>
           </article>
 
-          <!-- Project 2 -->
+          <!-- Go Ball Analysis / Big Data Bowl -->
           <article class="card">
-            <h3>Time Series Demand Forecasting</h3>
-            <p class="card-subtitle">Forecasting · Time series</p>
+            <h3>Go Ball Analysis – 2026 NFL Big Data Bowl</h3>
+            <p class="card-subtitle">Route concepts · Coverage strategies · Tournament project</p>
             <p>
-              Forecasted weekly product demand to improve inventory planning and reduce stockouts.
+              Analysis of how defenses defend deep vertical “go” routes and how offenses adjust route stems, spacing, and timing to attack different coverage structures.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> 3 years of sales for 200+ SKUs</li>
-              <li><strong>Methods:</strong> Feature-rich regression, Prophet / SARIMA baseline, cross-validation</li>
-              <li><strong>Result:</strong> ~12% MAPE reduction vs historical moving average</li>
+              <li><strong>Data:</strong> Open Big Data Bowl tracking data for passing plays with vertical concepts.</li>
+              <li><strong>Methods:</strong> Route labeling, separation and leverage metrics, coverage identification heuristics, outcome modeling.</li>
+              <li><strong>Goal:</strong> Quantify how defensive structures influence the success of deep routes and identify tendencies teams can exploit.</li>
             </ul>
             <div class="card-links">
-              <a href="https://github.com/your-github/forecasting-project" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="docs/forecasting_report.pdf" target="_blank" rel="noreferrer">Report (PDF)</a>
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/go-ball-analysis" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="docs/go_ball_analysis.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
             </div>
           </article>
 
-          <!-- Project 3 -->
+          <!-- Route stem clustering -->
           <article class="card">
-            <h3>Text Classification for Support Tickets</h3>
-            <p class="card-subtitle">NLP · Multi-class classification</p>
+            <h3>Route Stem Clustering for Wide Receiver Releases</h3>
+            <p class="card-subtitle">Spatial clustering · WR technique · Tracking data</p>
             <p>
-              Automated routing of customer support tickets by predicting issue categories from free-text descriptions.
+              Spatial method to quantify how wide receivers release off the ball, grouping route stems into distinct release archetypes and examining how they perform versus different coverages.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> 50k anonymized support tickets</li>
-              <li><strong>Methods:</strong> TF-IDF, linear models, BERT-based comparison, error analysis</li>
-              <li><strong>Result:</strong> Macro F1 +10pts vs rules-based system</li>
+              <li><strong>Data:</strong> Receiver tracking coordinates from snap through early route stem.</li>
+              <li><strong>Methods:</strong> Trajectory normalization, distance metrics, unsupervised clustering, cluster-level performance analysis.</li>
+              <li><strong>Goal:</strong> Provide coaches and analysts with interpretable “release profiles” across players and coverages.</li>
             </ul>
             <div class="card-links">
-              <a href="https://github.com/your-github/nlp-tickets" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="https://your-nlp-demo.vercel.app" target="_blank" rel="noreferrer">Demo</a>
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/route-stem-clustering" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="docs/route_stem_clustering.pdf" target="_blank" rel="noreferrer">Technical summary (PDF)</a>
+            </div>
+          </article>
+
+          <!-- Team self-scouting template -->
+          <article class="card">
+            <h3>Team Self-Scouting Strategy Template</h3>
+            <p class="card-subtitle">Open-source play-by-play · Self-scout reports</p>
+            <p>
+              A reproducible template that uses open NFL data to generate self-scout reports on team tendencies, including playcalling patterns, situational efficiency, and opponent-specific tendencies.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> Open-source play-by-play data (e.g., <em>nflfastR</em>-style datasets).</li>
+              <li><strong>Methods:</strong> ETL pipelines, situational grouping, rate and EPA metrics, report-ready visualizations.</li>
+              <li><strong>Goal:</strong> Give teams a starting point for automated weekly self-scouting that can be adapted to internal data sources.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/team-self-scout-template" target="_blank" rel="noreferrer">Template (GitHub)</a>
+              <a href="docs/team_self_scout_example.pdf" target="_blank" rel="noreferrer">Example report (PDF)</a>
+            </div>
+          </article>
+
+          <!-- Fantasy football scraper & newsletter -->
+          <article class="card">
+            <h3>Fantasy Football Scraper & Weekly Newsletter</h3>
+            <p class="card-subtitle">Web scraping · Automation · Win probability</p>
+            <p>
+              A tool that scrapes ESPN league data, processes matchup and roster information, and generates a weekly newsletter with standings, matchup previews, and live win probability tracking.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> Fantasy league scores, rosters, and schedule from ESPN.</li>
+              <li><strong>Methods:</strong> Python scraping, data pipelines, simple win probability models based on projections and historical scoring.</li>
+              <li><strong>Goal:</strong> Automate league recaps and make the experience more fun and data-driven for league members.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/fantasy-newsletter" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="https://YOUR_FANTASY_APP_URL" target="_blank" rel="noreferrer">Live dashboard</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- GIS & Mobility -->
+        <h3 style="margin-top:2.5rem;">GIS & Mobility</h3>
+        <div class="grid">
+          <!-- Transit logger app -->
+          <article class="card">
+            <h3>Transit Logger – Barcelona Metro Journeys</h3>
+            <p class="card-subtitle">Full stack app · Mobility data · Personal analytics</p>
+            <p>
+              A full stack transit logging app to track metro journeys across Barcelona, process the resulting trip data, and present summaries on how, when, and where I move through the city.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> Manually logged metro trips with timestamps, stations, lines, and transfers.</li>
+              <li><strong>Methods:</strong> CRUD app design, basic ETL pipeline, summary statistics and visualizations by line, time of day, and route.</li>
+              <li><strong>Goal:</strong> Explore personal mobility patterns and build a foundation for richer GIS analyses of transit behavior.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/transit-logger" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="https://YOUR_TRANSIT_APP_URL" target="_blank" rel="noreferrer">Live app</a>
+            </div>
+          </article>
+
+          <!-- Barcelona Super Commuter -->
+          <article class="card">
+            <h3>Barcelona Super Commuter</h3>
+            <p class="card-subtitle">GPS tracking · Route classification · Efficiency</p>
+            <p>
+              A project tracking walking routes in Barcelona, classifying commute types (e.g., direct, scenic, errand-heavy), and quantifying the efficiency and characteristics of different paths through the city.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> GPS traces of daily walks and commutes across neighborhoods in Barcelona.</li>
+              <li><strong>Methods:</strong> Route simplification, distance and elevation metrics, cluster analysis of route types, commute “efficiency” scores.</li>
+              <li><strong>Goal:</strong> Understand how actual walking behavior compares to shortest-path routes and how urban form shapes everyday mobility.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/barcelona-super-commuter" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="docs/barcelona_super_commuter.pdf" target="_blank" rel="noreferrer">Project brief (PDF)</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Economics / Other -->
+        <h3 style="margin-top:2.5rem;">Economics & Other</h3>
+        <div class="grid">
+          <!-- Philly gentrification -->
+          <article class="card">
+            <h3>Gentrification in Philadelphia – Undergrad Research Brief</h3>
+            <p class="card-subtitle">IPUMS & Census data · Neighborhood change</p>
+            <p>
+              An undergraduate research project analyzing gentrification patterns in Philadelphia using microdata and Census-based neighborhood indicators, with a focus on housing, income, and demographic shifts.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> IPUMS microdata and U.S. Census data at neighborhood / tract levels.</li>
+              <li><strong>Methods:</strong> Construction of gentrification indicators, cross-sectional and trend analysis, mapping of neighborhood change.</li>
+              <li><strong>Goal:</strong> Provide a concise, data-driven overview of how gentrification is unfolding across different parts of the city.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/philly-gentrification" target="_blank" rel="noreferrer">Code / analysis</a>
+              <a href="docs/philadelphia_gentrification_brief.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
+            </div>
+          </article>
+
+          <!-- Grant scoring -->
+          <article class="card">
+            <h3>Grant Application Scoring for Small Businesses</h3>
+            <p class="card-subtitle">NLP · Scoring algorithms · Public-sector analytics</p>
+            <p>
+              Designed scoring algorithms and a semi-automated review pipeline to evaluate small business grant applications for a municipal commerce department.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> Structured application fields plus free-text essay responses from small businesses.</li>
+              <li><strong>Methods:</strong> ETL and data quality checks, rules-based and model-based scores, OpenAI API calls to evaluate essays, ranking and prioritization logic.</li>
+              <li><strong>Goal:</strong> Reduce manual review time and standardize decisions while keeping scoring criteria transparent.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/grant-scoring" target="_blank" rel="noreferrer">Code / notebooks</a>
+              <a href="docs/grant_scoring_summary.pdf" target="_blank" rel="noreferrer">Project summary (PDF)</a>
+            </div>
+          </article>
+
+          <!-- Workforce / benefits cliffs -->
+          <article class="card">
+            <h3>Regional Workforce & Benefits Cliff Analytics</h3>
+            <p class="card-subtitle">Labor markets · Program evaluation · Dashboards</p>
+            <p>
+              Analysis of regional economic and demographic data to understand wage quality, inflation, and benefits cliffs for workers in the Philadelphia area, supporting workforce development strategy.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> Regional wage, employment, demographic data combined with program participant information.</li>
+              <li><strong>Methods:</strong> Panel data analysis, exploratory data analysis, and dashboard design to communicate findings to stakeholders.</li>
+              <li><strong>Goal:</strong> Inform program design and policy discussions with clear, accessible analytics on worker outcomes.</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/YOUR_GITHUB_USERNAME/workforce-benefits-analytics" target="_blank" rel="noreferrer">Code / dashboards</a>
+              <a href="docs/workforce_research_brief.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
             </div>
           </article>
         </div>
@@ -112,36 +252,38 @@
         <h2>Skills</h2>
         <div class="skills-grid">
           <div>
-            <h3>Languages</h3>
+            <h3>Languages & Tools</h3>
             <ul>
-              <li>Python</li>
+              <li>Python (pandas, NumPy, scikit-learn)</li>
+              <li>R (dplyr, ggplot2)</li>
               <li>SQL</li>
-              <li>R (optional)</li>
+              <li>ArcGIS and spatial analysis tools</li>
+              <li>Git & GitHub</li>
             </ul>
           </div>
           <div>
-            <h3>Data & ML</h3>
+            <h3>Data & Modeling</h3>
             <ul>
-              <li>Pandas, NumPy, Scikit-learn</li>
-              <li>Gradient boosting (XGBoost/LightGBM)</li>
-              <li>Time series modeling</li>
-              <li>Experimentation & A/B testing</li>
+              <li>Exploratory data analysis & feature engineering</li>
+              <li>Predictive modeling and model comparison</li>
+              <li>Spatial and temporal / tracking data analysis</li>
+              <li>Panel data / longitudinal analysis</li>
             </ul>
           </div>
           <div>
-            <h3>Visualization</h3>
+            <h3>Visualization & Reporting</h3>
             <ul>
-              <li>Matplotlib, Seaborn, Plotly</li>
-              <li>Dash / Streamlit (if relevant)</li>
-              <li>Tableau / Power BI (if relevant)</li>
+              <li>Dashboards and reporting for non-technical stakeholders</li>
+              <li>Clear data storytelling and research briefs</li>
+              <li>Experimentation and results communication</li>
             </ul>
           </div>
           <div>
-            <h3>Deployment & Tools</h3>
+            <h3>Domains</h3>
             <ul>
-              <li>Git, GitHub</li>
-              <li>FastAPI / Flask (if you use them)</li>
-              <li>Vercel / Docker (if relevant)</li>
+              <li>Sports analytics & NFL tracking data</li>
+              <li>Urban mobility & GIS</li>
+              <li>Workforce, economic development, and public policy</li>
             </ul>
           </div>
         </div>
@@ -153,14 +295,19 @@
       <div class="container">
         <h2>About</h2>
         <p>
-          I'm a data scientist with experience in building end-to-end solutions:
-          from exploring messy datasets and designing features to training models,
-          evaluating them rigorously, and communicating results to non-technical stakeholders.
+          I'm a data scientist focused on decision-making problems — using statistical modeling, spatial analysis, and clear communication to help teams act on their data.
         </p>
         <p>
-          I enjoy working on problems around <em>your interests here: e.g. customer analytics,
-          forecasting, NLP, experimentation</em> and like collaborating closely with product and
-          engineering teams to turn insights into impact.
+          I’m currently studying in the <strong>Master’s in Data Science for Decision Making</strong> program at the
+          <strong>Barcelona School of Economics</strong>, where my coursework includes causal inference, machine learning, deep learning, and econometrics.
+        </p>
+        <p>
+          Previously, I worked as a <strong>Next Gen Stats Research Analyst at the NFL</strong>, developing dashboards and models on player tracking data,
+          and as a <strong>data analyst on workforce and economic development projects</strong>, supporting public-sector and social impact organizations with analytics and visualization.
+        </p>
+        <p>
+          Before my master’s, I studied Economics at <strong>Temple University</strong> and <strong>Foothill College</strong>, and played college football at Temple,
+          which continues to shape how I think about performance, strategy, and team dynamics.
         </p>
       </div>
     </section>
@@ -170,12 +317,14 @@
       <div class="container">
         <h2>Contact</h2>
         <p>
-          The easiest way to reach me is by email or LinkedIn.
+          Feel free to reach out about data science roles with teams, leagues, or international organizations, or for collaborations on sports analytics and public-policy projects.
         </p>
         <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">@your-handle</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/your-github" target="_blank" rel="noreferrer">@your-github</a></li>
+          <li><strong>Email:</strong> <a href="mailto:samuel.fraley@bse.eu">samuel.fraley@bse.eu</a></li>
+          <!-- TODO: replace with your actual LinkedIn URL -->
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE" target="_blank" rel="noreferrer">Connect on LinkedIn</a></li>
+          <!-- TODO: replace with your actual GitHub URL -->
+          <li><strong>GitHub:</strong> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">View my code</a></li>
         </ul>
       </div>
     </section>
@@ -183,7 +332,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <span>&copy; <span id="year"></span> Your Name. All rights reserved.</span>
+      <span>&copy; <span id="year"></span> Samuel Fraley. All rights reserved.</span>
     </div>
   </footer>
 
