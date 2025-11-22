@@ -33,11 +33,10 @@
         </p>
         <div class="hero-links">
           <a class="btn" href="https://github.com/samuelfraley-bse" target="_blank" rel="noreferrer">GitHub</a>
-          <!-- TODO: replace with your actual LinkedIn URL -->
-          <a class="btn-outline" href="https://www.linkedin.com/in/sam-fraley-4a6681166/gm" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn-outline" href="https://www.linkedin.com/in/sam-fraley-4a6681166/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
         <p class="section-intro" style="margin-top:1.25rem; max-width:38rem;">
-          I’ve worked across public policy and professional sports, and I’m especially excited about roles with teams or organizations that care about rigorous, decision-focused analytics.
+          I've worked across public policy and professional sports, and I'm especially excited about roles with teams or organizations that care about rigorous, decision-focused analytics.
         </p>
       </div>
     </section>
@@ -53,29 +52,34 @@
         <!-- NFL Analytics -->
         <h3 style="margin-top:2.25rem;">NFL Analytics</h3>
         <div class="grid">
-          <!-- Blitz path detection -->
-          <article class="card">
-            <h3>Blitz Path Detection from Player Tracking Data</h3>
-            <p class="card-subtitle">Tracking data · Spatial ML · Defensive strategy</p>
-            <p>
-              Proof-of-concept model to identify defender blitzes from raw NFL player tracking data, with an emphasis on how defenders approach and attack the pocket over time.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> High-frequency player tracking coordinates and event data across multiple games.</li>
-              <li><strong>Methods:</strong> Feature engineering on spatial-temporal trajectories, clustering and classification, feature importance analysis.</li>
-              <li><strong>Goal:</strong> Support film study and internal analytics products with automated blitz detection and labeling.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/blitz_path_case_study.pdf">
-              <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
-            </div>
-            <div class="card-links">
-              <!-- TODO: update when repo is ready -->
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/blitz-path-detection" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="docs/blitz_path_case_study.pdf" target="_blank" rel="noreferrer">Case study (PDF)</a>
-            </div>
-          </article>
 
+         <!-- NFL Play Call Predictor -->
+<article class="card">
+  <h3>NFL Play Call Predictor</h3>
+  <p class="card-subtitle">Full-stack app · ML pipeline · Software engineering</p>
+  <p>
+    A production web application that predicts run-pass probability based on pre-snap context, built for a computational methods course to demonstrate software engineering best practices.
+  </p>
+  <ul class="details">
+    <li><strong>Data:</strong> NFL play-by-play data from 2021–2023 seasons with pre-snap situational features.</li>
+    <li><strong>Methods:</strong> Feature engineering pipeline, simple ML classifiers, comprehensive unit testing, modular code architecture.</li>
+    <li><strong>Focus:</strong> Emphasizes production-quality code—full feature libraries, testing suites, and deployment—over advanced modeling given data constraints.</li>
+  </ul>
+
+  <!-- PDF preview (same structure as Go Ball card) -->
+  <div class="pdf-thumbnail" data-pdf="docs/nfl_playcaller_screenshot.pdf">
+    <canvas></canvas>
+    <div class="pdf-thumbnail-loading">Loading preview...</div>
+  </div>
+
+  <div class="card-links">
+    <a href="https://github.com/samuelfraley-bse/nflrunpass" target="_blank" rel="noreferrer">Code (GitHub)</a>
+    <a href="https://nfl-playcaller.vercel.app/" target="_blank" rel="noreferrer">Live app</a>
+    <a href="docs/nfl_playcaller_screenshot.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
+  </div>
+</article>
+
+             
           <!-- Go Ball Analysis / Big Data Bowl -->
           <article class="card">
             <h3>Go Ball Analysis – 2026 NFL Big Data Bowl</h3>
@@ -98,8 +102,24 @@
             </div>
           </article>
 
-          <!-- Route stem clustering -->
-          <article class="card">
+          <!-- Blitz path detection - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
+            <h3>Blitz Path Detection from Player Tracking Data</h3>
+            <p class="card-subtitle">Tracking data · Spatial ML · Defensive strategy</p>
+            <p>
+              Proof-of-concept model to identify defender blitzes from raw NFL player tracking data, with an emphasis on how defenders approach and attack the pocket over time.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> High-frequency player tracking coordinates and event data across multiple games.</li>
+              <li><strong>Methods:</strong> Feature engineering on spatial-temporal trajectories, clustering and classification, feature importance analysis.</li>
+              <li><strong>Goal:</strong> Support film study and internal analytics products with automated blitz detection and labeling.</li>
+            </ul>
+          </article>
+
+          <!-- Route stem clustering - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
             <h3>Route Stem Clustering for Wide Receiver Releases</h3>
             <p class="card-subtitle">Spatial clustering · WR technique · Tracking data</p>
             <p>
@@ -110,18 +130,11 @@
               <li><strong>Methods:</strong> Trajectory normalization, distance metrics, unsupervised clustering, cluster-level performance analysis.</li>
               <li><strong>Goal:</strong> Provide coaches and analysts with interpretable "release profiles" across players and coverages.</li>
             </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/route_stem_clustering.pdf">
-              <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/route-stem-clustering" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="docs/route_stem_clustering.pdf" target="_blank" rel="noreferrer">Technical summary (PDF)</a>
-            </div>
           </article>
 
-          <!-- Team self-scouting template -->
-          <article class="card">
+          <!-- Team self-scouting template - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
             <h3>Team Self-Scouting Strategy Template</h3>
             <p class="card-subtitle">Open-source play-by-play · Self-scout reports</p>
             <p>
@@ -132,18 +145,11 @@
               <li><strong>Methods:</strong> ETL pipelines, situational grouping, rate and EPA metrics, report-ready visualizations.</li>
               <li><strong>Goal:</strong> Give teams a starting point for automated weekly self-scouting that can be adapted to internal data sources.</li>
             </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/team_self_scout_example.pdf">
-              <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/team-self-scout-template" target="_blank" rel="noreferrer">Template (GitHub)</a>
-              <a href="docs/team_self_scout_example.pdf" target="_blank" rel="noreferrer">Example report (PDF)</a>
-            </div>
           </article>
 
-          <!-- Fantasy football scraper & newsletter -->
-          <article class="card">
+          <!-- Fantasy football scraper - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
             <h3>Fantasy Football Scraper & Weekly Newsletter</h3>
             <p class="card-subtitle">Web scraping · Automation · Win probability</p>
             <p>
@@ -154,10 +160,6 @@
               <li><strong>Methods:</strong> Python scraping, data pipelines, simple win probability models based on projections and historical scoring.</li>
               <li><strong>Goal:</strong> Automate league recaps and make the experience more fun and data-driven for league members.</li>
             </ul>
-            <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/fantasy-newsletter" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="https://YOUR_FANTASY_APP_URL" target="_blank" rel="noreferrer">Live dashboard</a>
-            </div>
           </article>
         </div>
 
@@ -166,24 +168,28 @@
         <div class="grid">
           <!-- Transit logger app -->
           <article class="card">
-            <h3>Transit Logger – Barcelona Metro Journeys</h3>
-            <p class="card-subtitle">Full stack app · Mobility data · Personal analytics</p>
+            <h3>moveBSE – Barcelona Transit Logger</h3>
+            <p class="card-subtitle">Full-stack app · React + Supabase · Offline-first design</p>
             <p>
-              A full stack transit logging app to track metro journeys across Barcelona, process the resulting trip data, and present summaries on how, when, and where I move through the city.
+              A full-stack transit logging app for friends to track metro journeys across Barcelona, featuring real-time dashboards, leaderboards, and a "Spotify Wrapped"–style year-in-review summary.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> Manually logged metro trips with timestamps, stations, lines, and transfers.</li>
-              <li><strong>Methods:</strong> CRUD app design, basic ETL pipeline, summary statistics and visualizations by line, time of day, and route.</li>
-              <li><strong>Goal:</strong> Explore personal mobility patterns and build a foundation for richer GIS analyses of transit behavior.</li>
+              <li><strong>Stack:</strong> React frontend, Supabase backend for user authentication and data storage, deployed on Vercel.</li>
+              <li><strong>Challenges:</strong> Offline loading and syncing for use in metro tunnels with limited service, dynamic state management, multi-user authentication.</li>
+              <li><strong>Features:</strong> Trip logging, personal dashboards with commute stats and CO₂ savings, tap location mapping, and social leaderboard comparisons.</li>
             </ul>
+            <div class="img-thumbnail">
+              <img src="images/transit_logger_dashboard.png" alt="Transit Logger Dashboard showing commute stats and Barcelona metro tap locations">
+            </div>
             <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/transit-logger" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="https://YOUR_TRANSIT_APP_URL" target="_blank" rel="noreferrer">Live app</a>
+              <a href="https://github.com/samuelfraley-bse/transit-logger" target="_blank" rel="noreferrer">Code (GitHub)</a>
+              <a href="https://transit-logger.vercel.app/" target="_blank" rel="noreferrer">Live app</a>
             </div>
           </article>
 
-          <!-- Barcelona Super Commuter -->
-          <article class="card">
+          <!-- Barcelona Super Commuter - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
             <h3>Barcelona Super Commuter</h3>
             <p class="card-subtitle">GPS tracking · Route classification · Efficiency</p>
             <p>
@@ -194,22 +200,15 @@
               <li><strong>Methods:</strong> Route simplification, distance and elevation metrics, cluster analysis of route types, commute "efficiency" scores.</li>
               <li><strong>Goal:</strong> Understand how actual walking behavior compares to shortest-path routes and how urban form shapes everyday mobility.</li>
             </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/barcelona_super_commuter.pdf">
-              <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/barcelona-super-commuter" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="docs/barcelona_super_commuter.pdf" target="_blank" rel="noreferrer">Project brief (PDF)</a>
-            </div>
           </article>
         </div>
 
-        <!-- Economics / Other -->
+        <!-- Economics / Other - COMING SOON -->
         <h3 style="margin-top:2.5rem;">Economics & Other</h3>
         <div class="grid">
-          <!-- Philly gentrification -->
-          <article class="card">
+          <!-- Philly gentrification - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
             <h3>Gentrification in Philadelphia – Undergrad Research Brief</h3>
             <p class="card-subtitle">IPUMS & Census data · Neighborhood change</p>
             <p>
@@ -220,18 +219,11 @@
               <li><strong>Methods:</strong> Construction of gentrification indicators, cross-sectional and trend analysis, mapping of neighborhood change.</li>
               <li><strong>Goal:</strong> Provide a concise, data-driven overview of how gentrification is unfolding across different parts of the city.</li>
             </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/philadelphia_gentrification_brief.pdf">
-              <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/philly-gentrification" target="_blank" rel="noreferrer">Code / analysis</a>
-              <a href="docs/philadelphia_gentrification_brief.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
-            </div>
           </article>
 
-          <!-- Grant scoring -->
-          <article class="card">
+          <!-- Grant scoring - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
             <h3>Grant Application Scoring for Small Businesses</h3>
             <p class="card-subtitle">NLP · Scoring algorithms · Public-sector analytics</p>
             <p>
@@ -242,18 +234,11 @@
               <li><strong>Methods:</strong> ETL and data quality checks, rules-based and model-based scores, OpenAI API calls to evaluate essays, ranking and prioritization logic.</li>
               <li><strong>Goal:</strong> Reduce manual review time and standardize decisions while keeping scoring criteria transparent.</li>
             </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/grant_scoring_summary.pdf">
-              <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/grant-scoring" target="_blank" rel="noreferrer">Code / notebooks</a>
-              <a href="docs/grant_scoring_summary.pdf" target="_blank" rel="noreferrer">Project summary (PDF)</a>
-            </div>
           </article>
 
-          <!-- Workforce / benefits cliffs -->
-          <article class="card">
+          <!-- Workforce / benefits cliffs - COMING SOON -->
+          <article class="card card-coming-soon">
+            <span class="coming-soon-badge">Coming Soon</span>
             <h3>Regional Workforce & Benefits Cliff Analytics</h3>
             <p class="card-subtitle">Labor markets · Program evaluation · Dashboards</p>
             <p>
@@ -264,106 +249,98 @@
               <li><strong>Methods:</strong> Panel data analysis, exploratory data analysis, and dashboard design to communicate findings to stakeholders.</li>
               <li><strong>Goal:</strong> Inform program design and policy discussions with clear, accessible analytics on worker outcomes.</li>
             </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/workforce_research_brief.pdf">
+          </article>
+        </div>
+
+        <!-- Older Work / Economics Research -->
+        <h3 style="margin-top:2.5rem;">Older Work – Economics & Policy Research</h3>
+        <p class="section-intro">
+          Research briefs and analysis from my time at Philadelphia Works, focusing on labor markets, workforce development, and regional economics.
+        </p>
+        <div class="grid">
+          <!-- LODES Commuting Analysis -->
+          <article class="card">
+            <h3>Mapping Commuting Patterns in Philadelphia</h3>
+            <p class="card-subtitle">Census LODES data · Regional mobility · Workforce flows</p>
+            <p>
+              Comprehensive analysis of home-to-work commuting patterns across the 11-county Philadelphia metropolitan area using Census LEHD Origin-Destination data, visualizing worker flows and demographic characteristics of commuters.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> Census LODES (LEHD Origin-Destination Employment Statistics) at census tract level, covering 4.5+ million jobs and 900,000+ commute paths.</li>
+              <li><strong>Methods:</strong> Spatial aggregation to tract and county levels, multiline feature construction, demographic breakdowns by age, income, and industry sector, interactive dashboard design in ArcGIS Online.</li>
+              <li><strong>Key Findings:</strong> Philadelphia County had 525,000 workplace jobs with 44% filled by commuters from other counties; Montgomery County showed highest commuter dependency at 55%.</li>
+            </ul>
+            <div class="pdf-thumbnail" data-pdf="docs/lodes.pdf">
               <canvas></canvas>
               <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
-              <a href="https://github.com/YOUR_GITHUB_USERNAME/workforce-benefits-analytics" target="_blank" rel="noreferrer">Code / dashboards</a>
-              <a href="docs/workforce_research_brief.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
+              <a href="docs/lodes.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
             </div>
           </article>
-</div> 
-          <!-- Older Work / Economics Research -->
-<h3 style="margin-top:2.5rem;">Older Work – Economics & Policy Research</h3>
-<p class="section-intro">
-  Research briefs and analysis from my time at Philadelphia Works, focusing on labor markets, workforce development, and regional economics.
-</p>
-<div class="grid">
-  <!-- LODES Commuting Analysis -->
-  <article class="card">
-    <h3>Mapping Commuting Patterns in Philadelphia</h3>
-    <p class="card-subtitle">Census LODES data · Regional mobility · Workforce flows</p>
-    <p>
-      Comprehensive analysis of home-to-work commuting patterns across the 11-county Philadelphia metropolitan area using Census LEHD Origin-Destination data, visualizing worker flows and demographic characteristics of commuters.
-    </p>
-    <ul class="details">
-      <li><strong>Data:</strong> Census LODES (LEHD Origin-Destination Employment Statistics) at census tract level, covering 4.5+ million jobs and 900,000+ commute paths.</li>
-      <li><strong>Methods:</strong> Spatial aggregation to tract and county levels, multiline feature construction, demographic breakdowns by age, income, and industry sector, interactive dashboard design in ArcGIS Online.</li>
-      <li><strong>Key Findings:</strong> Philadelphia County had 525,000 workplace jobs with 44% filled by commuters from other counties; Montgomery County showed highest commuter dependency at 55%.</li>
-    </ul>
-    <div class="pdf-thumbnail" data-pdf="docs/lodes.pdf">
-      <canvas></canvas>
-      <div class="pdf-thumbnail-loading">Loading preview...</div>
-    </div>
-    <div class="card-links">
-      <a href="docs/lodes.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
-    </div>
-  </article>
 
-  <!-- Inflation Analysis -->
-  <article class="card">
-    <h3>Rising Inflation and the Current Recovery</h3>
-    <p class="card-subtitle">Economic indicators · Time series · Policy analysis</p>
-    <p>
-      Analysis of Philadelphia's inflation trends during the 2022 economic recovery, comparing local Consumer Price Index data to national patterns and examining sector-specific price changes alongside labor market indicators.
-    </p>
-    <ul class="details">
-      <li><strong>Data:</strong> BLS Consumer Price Index data for Philadelphia metro area and comparison cities.</li>
-      <li><strong>Methods:</strong> Year-over-year change calculations, sector decomposition (food, energy, services, core goods), cross-market comparisons.</li>
-      <li><strong>Key Findings:</strong> Philadelphia inflation reached 8.8% YoY in June 2022, with energy prices rising 36% and services inflation accelerating to 6.4%, despite falling unemployment and 5.3% wage growth.</li>
-    </ul>
-    <div class="pdf-thumbnail" data-pdf="docs/inflation22.pdf">
-      <canvas></canvas>
-      <div class="pdf-thumbnail-loading">Loading preview...</div>
-    </div>
-    <div class="card-links">
-      <a href="docs/inflation22.pdf" target="_blank" rel="noreferrer">Economic brief (PDF)</a>
-    </div>
-  </article>
+          <!-- Inflation Analysis -->
+          <article class="card">
+            <h3>Rising Inflation and the Current Recovery</h3>
+            <p class="card-subtitle">Economic indicators · Time series · Policy analysis</p>
+            <p>
+              Analysis of Philadelphia's inflation trends during the 2022 economic recovery, comparing local Consumer Price Index data to national patterns and examining sector-specific price changes alongside labor market indicators.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> BLS Consumer Price Index data for Philadelphia metro area and comparison cities.</li>
+              <li><strong>Methods:</strong> Year-over-year change calculations, sector decomposition (food, energy, services, core goods), cross-market comparisons.</li>
+              <li><strong>Key Findings:</strong> Philadelphia inflation reached 8.8% YoY in June 2022, with energy prices rising 36% and services inflation accelerating to 6.4%, despite falling unemployment and 5.3% wage growth.</li>
+            </ul>
+            <div class="pdf-thumbnail" data-pdf="docs/inflation22.pdf">
+              <canvas></canvas>
+              <div class="pdf-thumbnail-loading">Loading preview...</div>
+            </div>
+            <div class="card-links">
+              <a href="docs/inflation22.pdf" target="_blank" rel="noreferrer">Economic brief (PDF)</a>
+            </div>
+          </article>
 
-  <!-- Distance & Enrollment Analysis -->
-  <article class="card">
-    <h3>How Does Distance Impact Enrollment?</h3>
-    <p class="card-subtitle">Spatial analysis · GIS · Program evaluation</p>
-    <p>
-      Geospatial analysis examining whether distance to CareerLink centers affects customer enrollment rates, using the sf() package in R to map and quantify accessibility patterns across Philadelphia zip codes.
-    </p>
-    <ul class="details">
-      <li><strong>Data:</strong> Customer enrollment data and CareerLink center locations at zip code level.</li>
-      <li><strong>Methods:</strong> Spatial join operations, centroid-based distance calculations, linear regression modeling, exploratory spatial analysis.</li>
-      <li><strong>Key Findings:</strong> Distance alone showed weak predictive power for enrollment, but spatial clustering suggested accessibility may interact with other factors like transit availability.</li>
-    </ul>
-    <div class="pdf-thumbnail" data-pdf="docs/distance.pdf">
-      <canvas></canvas>
-      <div class="pdf-thumbnail-loading">Loading preview...</div>
-    </div>
-    <div class="card-links">
-      <a href="docs/distance.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
-    </div>
-  </article>
+          <!-- Distance & Enrollment Analysis -->
+          <article class="card">
+            <h3>How Does Distance Impact Enrollment?</h3>
+            <p class="card-subtitle">Spatial analysis · GIS · Program evaluation</p>
+            <p>
+              Geospatial analysis examining whether distance to CareerLink centers affects customer enrollment rates, using the sf() package in R to map and quantify accessibility patterns across Philadelphia zip codes.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> Customer enrollment data and CareerLink center locations at zip code level.</li>
+              <li><strong>Methods:</strong> Spatial join operations, centroid-based distance calculations, linear regression modeling, exploratory spatial analysis.</li>
+              <li><strong>Key Findings:</strong> Distance alone showed weak predictive power for enrollment, but spatial clustering suggested accessibility may interact with other factors like transit availability.</li>
+            </ul>
+            <div class="pdf-thumbnail" data-pdf="docs/distance.pdf">
+              <canvas></canvas>
+              <div class="pdf-thumbnail-loading">Loading preview...</div>
+            </div>
+            <div class="card-links">
+              <a href="docs/distance.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
+            </div>
+          </article>
 
-  <!-- Monthly Economic Update -->
-  <article class="card">
-    <h3>Philadelphia Economic Update – July 2023</h3>
-    <p class="card-subtitle">Labor market monitoring · Dashboard reporting</p>
-    <p>
-      Monthly economic snapshot tracking unemployment, labor force participation, job postings, and industry-level employment changes for the Philadelphia region, designed for stakeholder communication and policy monitoring.
-    </p>
-    <ul class="details">
-      <li><strong>Data:</strong> BLS Local Area Unemployment Statistics, Lightcast job postings data, CPI inflation measures.</li>
-      <li><strong>Methods:</strong> Month-over-month and year-over-year change calculations, top occupation rankings, industry employment trend analysis.</li>
-      <li><strong>Format:</strong> Regular monthly publication with standardized metrics and visualizations for consistent tracking over time.</li>
-    </ul>
-    <div class="pdf-thumbnail" data-pdf="docs/july2023_economic_update.pdf">
-      <canvas></canvas>
-      <div class="pdf-thumbnail-loading">Loading preview...</div>
-    </div>
-    <div class="card-links">
-      <a href="docs/july2023_economic_update.pdf" target="_blank" rel="noreferrer">Monthly update (PDF)</a>
-    </div>
-  </article>
-</div>
+          <!-- Monthly Economic Update -->
+          <article class="card">
+            <h3>Philadelphia Economic Update – July 2023</h3>
+            <p class="card-subtitle">Labor market monitoring · Dashboard reporting</p>
+            <p>
+              Monthly economic snapshot tracking unemployment, labor force participation, job postings, and industry-level employment changes for the Philadelphia region, designed for stakeholder communication and policy monitoring.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> BLS Local Area Unemployment Statistics, Lightcast job postings data, CPI inflation measures.</li>
+              <li><strong>Methods:</strong> Month-over-month and year-over-year change calculations, top occupation rankings, industry employment trend analysis.</li>
+              <li><strong>Format:</strong> Regular monthly publication with standardized metrics and visualizations for consistent tracking over time.</li>
+            </ul>
+            <div class="pdf-thumbnail" data-pdf="docs/july2023_economic_update.pdf">
+              <canvas></canvas>
+              <div class="pdf-thumbnail-loading">Loading preview...</div>
+            </div>
+            <div class="card-links">
+              <a href="docs/july2023_economic_update.pdf" target="_blank" rel="noreferrer">Monthly update (PDF)</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -420,7 +397,7 @@
           I'm a data scientist focused on decision-making problems — using statistical modeling, spatial analysis, and clear communication to help teams act on their data.
         </p>
         <p>
-          I’m currently studying in the <strong>Master’s in Data Science for Decision Making</strong> program at the
+          I'm currently studying in the <strong>Master's in Data Science for Decision Making</strong> program at the
           <strong>Barcelona School of Economics</strong>, where my coursework includes causal inference, machine learning, deep learning, and econometrics.
         </p>
         <p>
@@ -428,7 +405,7 @@
           and as a <strong>data analyst on workforce and economic development projects</strong>, supporting public-sector and social impact organizations with analytics and visualization.
         </p>
         <p>
-          Before my master’s, I studied Economics at <strong>Temple University</strong> and <strong>Foothill College</strong>, and played college football at Temple,
+          Before my master's, I studied Economics at <strong>Temple University</strong> and <strong>Foothill College</strong>, and played college football at Temple,
           which continues to shape how I think about performance, strategy, and team dynamics.
         </p>
       </div>
@@ -443,10 +420,8 @@
         </p>
         <ul class="contact-list">
           <li><strong>Email:</strong> <a href="mailto:samuel.fraley@bse.eu">samuel.fraley@bse.eu</a></li>
-          <!-- TODO: replace with your actual LinkedIn URL -->
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE" target="_blank" rel="noreferrer">Connect on LinkedIn</a></li>
-          <!-- TODO: replace with your actual GitHub URL -->
-          <li><strong>GitHub:</strong> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">View my code</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sam-fraley-4a6681166/" target="_blank" rel="noreferrer">Connect on LinkedIn</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/samuelfraley-bse" target="_blank" rel="noreferrer">View my code</a></li>
         </ul>
       </div>
     </section>
