@@ -390,3 +390,31 @@ a:hover {
   border: 1px solid rgba(148, 163, 184, 0.3);
   z-index: 2;
 }
+
+.hero-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* so it doesn't break on small screens */
+}
+
+.hero-headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.35rem;
+}
+
+/* Optional: stack nicely on very small screens */
+@media (max-width: 600px) {
+  .hero-profile {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
