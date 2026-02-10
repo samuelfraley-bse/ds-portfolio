@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maps and Visuals | Samuel Fraley</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gallery of maps, spatial visuals, and research graphics.">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="gallery-page" data-repo-owner="samuelfraley-bse" data-repo-name="ds-portfolio" data-branch="main" data-maps-path="maps">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="brand-mark">></span>
+        <span class="brand-name">Samuel Fraley</span>
+      </div>
+      <nav class="nav">
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../maps/visuals/" class="is-active">Maps</a>
+        <a href="../../index.html#skills">Skills</a>
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Maps and Visuals</h1>
+        <p class="section-intro">
+          A scrolling gallery of cartography, spatial research, and visual storytelling.
+        </p>
+
+        <div class="gallery-controls">
+          <input id="searchInput" class="control-input" type="search" placeholder="Search maps by name">
+          <div class="filter-group" role="group" aria-label="Filter by file type">
+            <button class="is-active" data-filter="all">All</button>
+            <button data-filter="image">Images</button>
+            <button data-filter="pdf">PDFs</button>
+          </div>
+          <select id="sortSelect" class="control-select" aria-label="Sort maps">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="size-desc">Size (Large)</option>
+            <option value="size-asc">Size (Small)</option>
+          </select>
+          <div class="gallery-meta">
+            <span id="galleryCount">Loading...</span>
+            <span id="gallerySource"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="galleryGrid" class="gallery-grid"></div>
+        <div id="galleryEmpty" class="gallery-empty" style="display:none;">
+          No visuals match this filter yet.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Samuel Fraley. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Map preview">
+      <div class="lightbox-header">
+        <h2 class="lightbox-title" id="lightboxTitle">Preview</h2>
+        <button class="lightbox-close" type="button" id="lightboxClose">Close</button>
+      </div>
+      <div class="lightbox-body" id="lightboxBody"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <div class="container">
+      <p class="section-intro">Enable JavaScript to load the gallery.</p>
+    </div>
+  </noscript>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="visuals.js"></script>
+</body>
+</html>
