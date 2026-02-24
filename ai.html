@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How I Use AI | Samuel Fraley</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My approach to using AI tools in data science and software engineering.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="brand-mark">></span>
+        <span class="brand-name">Samuel Fraley</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html#projects">Projects</a>
+        <a href="maps/visuals/">Maps</a>
+        <a href="ai.html" class="is-active">AI</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>How I Use AI</h1>
+        <p class="section-intro">
+          A transparency statement on how I leverage artificial intelligence in my work and studies.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 65ch;">
+          <h2>My Philosophy</h2>
+          <p>
+            I finished my Bachelor's in 2022 so ChatGPT was just getting launched. I think the first time I actually used a LLM it
+            was for something unserious like generating a movie script. Fast forward to 2026 and I'm working on my master's degree while
+            figuring out how do I even attack these tools that seem to get better overnight.
+
+            I have a lot of thoughts, but at the end of the day, I don't want to trade off efficiency gained from AI tools for learning. 
+            In school, I'm not only giving up wages to be here but I'm paying to be here, so I would only be robbing myself if I let Claude earn my
+            degree for me. It is tempeting because of efficiency, but I do believe there is a way to strike a balance. For topics and areas that I am 
+            already comfortable with (ie making a map of US Census Data), I don't mind using AI since I have a prior in regards to what the output should look like
+            and what's reasonable. For topics that are new to me, I want to be doing the work myself and using AI as a guide or tutor when I get stuck. I think this is the best way to learn and also be efficient.
+          </p>
+
+          <h2>Tools & Workflows</h2>
+          <p>
+            I mainly use Claude but have considered switching to Codex. Since I'm broke and in grad school, my balance is:
+            First: use my student version of Gemini for basic reasoning tasks, make outlines, audit code etc.
+            Second: when I need to build I use Claude since (for now, I'm paying for it)
+
+            I have been trying to populate my portfolio while also managing the academic program so I developed two approaches to using AI in my projects:
+            1. For portfolio projects, I use AI as a tool to help me be more efficient. I will use it to generate code snippets, debug, and even write documentation. 
+            Risk: It can be easy to mass produce AI slop with way if my goal is just to have more projects.
+            Reward: I barely knew java before this and now I am able to design front end applications with AI tools. Also this is a chacne
+            to show that I am embracing smart ways to use AI.
+
+            2. For academic projects, I use AI as a tutor and to create study guides. I like Gemini learning mode and I will try and prompy any LLM I use for school
+            to PLEASE NOT GIVE ME THE ANSWER, and walk me through problems in a dialouge. I'm studying a very technical masters to most LLM are pretty capable of getting into
+            basic concepts of stuff like machine learinig, econometrics, etc. 
+            I like to feed it my class slides or previous assignments to make study guides. I found this to be really helpful and it has its own process:
+            1. I feed it materials and have it make me a latex template for a student guide. Generally I prompt it to do free response questions, and do my first pass as an
+            overview of key concepts or therories. I only sometimes ask it for proofs as most of my courses don't ask for this.
+            2. I put this in Overleaf and do the study guide by hand. Even if I don't know at all the answer, I shoot in the dark. Just something. I've found
+            this process helps things stick and breaks my temptation to just ask for the answer.
+            3. I upload the final doc and ask it to score my responses. Sometimes I do terribly and that is OK. I ask it to first just score and mark which questions got wrong - but DON'T explain why. 
+            4. Then I look at the questions I got wrong and use AI learning mode to get the right answers.
+          </p>
+
+          <h2>Ethics & Academic Integrity</h2>
+          <p>
+            I'm still working on the best workflow for this but I think the key is to be transparent with professors and employers about how I use AI. 
+            I want to be clear that I'm not using it to do the work for me, but rather as a tool to help me learn and be more efficient. I also want to make sure that I'm not violating any academic integrity policies, so I always check with my professors before using AI for any assignments or projects.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Samuel Fraley. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
