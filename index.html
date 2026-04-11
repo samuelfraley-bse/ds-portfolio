@@ -39,7 +39,7 @@
       <div class="hero-text">
         <h1>Samuel Fraley</h1>
         <p class="hero-tagline">
-          Temple football alum and former NFL Next Gen Stats researcher, now studying Data Science in Barcelona. 
+          Temple football alum and former NFL Next Gen Stats researcher, now studying Data Science in Barcelona.
         </p>
       </div>
     </div>
@@ -62,11 +62,11 @@
       <div class="container">
         <h2>Selected Projects</h2>
         <p class="section-intro">
-          Work spanning NFL analytics, GIS and mobility, and applied economics / public policy.
+          Work spanning sports analytics, NLP, GIS, and applied economics.
         </p>
 
-        <!-- NFL Analytics -->
-        <h3 style="margin-top:2.25rem;">NFL Analytics</h3>
+        <!-- Sports & NFL Analytics -->
+        <h3 style="margin-top:2.25rem;">Sports & NFL Analytics</h3>
         <div class="grid">
 
           <article class="card">
@@ -83,6 +83,28 @@
               <a href="docs/TempleRoster.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
             </div>
           </article>
+
+          <!-- AAC Recruiting & Portal Snapshot -->
+          <article class="card">
+            <h3>AAC 2026 Recruiting & Portal Snapshot</h3>
+            <p class="card-subtitle">Recruiting analytics · Transfer portal · College football</p>
+            <p>
+              Visual snapshots of recruiting and transfer portal activity across AAC conference programs for the 2026 cycle, mapping high school recruit origins and portal entries and exits by position.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> 247Sports team commit pages and CFBD transfer portal records, with local coordinate and logo caches.</li>
+              <li><strong>Methods:</strong> Choropleth maps of signed recruit origins by state, logo-annotated portal entry maps by origin school, and position-level bar charts comparing entries vs. exits.</li>
+              <li><strong>Coverage:</strong> Individual slides built for Temple, Tulane, and other AAC programs — each showing the full recruiting and portal picture for the cycle.</li>
+            </ul>
+            <div class="pdf-thumbnail" data-pdf="docs/aac_2026_recruiting_portal_assets_deck.pdf">
+              <canvas></canvas>
+              <div class="pdf-thumbnail-loading">Loading preview...</div>
+            </div>
+            <div class="card-links">
+              <a href="docs/aac_2026_recruiting_portal_assets_deck.pdf" target="_blank" rel="noreferrer">Slide deck (PDF)</a>
+            </div>
+          </article>
+
           <!-- Target Separation EDA – 2026 NFL Big Data Bowl -->
           <article class="card">
             <h3>Target Separation & In-Flight Movement EDA – 2026 NFL Big Data Bowl</h3>
@@ -95,69 +117,45 @@
               <li><strong>Methods:</strong> Event alignment around release and arrival, separation metrics at throw vs. catch, change-in-separation distributions, route- and matchup-level breakdowns.</li>
               <li><strong>Goal:</strong> Analyze how separation changes while the ball is in the air, combine speed metrics for wide recievers to better understand in-flight movement.</li>
             </ul>
-
             <div class="pdf-thumbnail" data-pdf="docs/target_separation_eda.pdf">
               <canvas></canvas>
               <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
-
             <div class="card-links">
               <a href="docs/target_separation_eda.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
             </div>
           </article>
 
-          <!-- NFL Play Call Predictor -->
+        </div>
+
+        <!-- Economics, NLP & GIS -->
+        <h3 style="margin-top:2.5rem;">Economics, NLP & GIS</h3>
+        <p class="section-intro">
+          Applied economics research, text analysis, and spatial work — from EU policy documents to Philadelphia labor markets.
+        </p>
+        <div class="grid">
+
+          <!-- EU Progress Reports NLP -->
           <article class="card">
-            <h3>NFL Play Call Predictor (still in dev)</h3>
-            <p class="card-subtitle">Full-stack app · ML pipeline · Software engineering</p>
+            <h3>Soft and Hard Criticism in EU Progress Reports</h3>
+            <p class="card-subtitle">NLP · Text mining · EU enlargement · Panel data</p>
             <p>
-              A production web application that predicts run-pass probability based on pre-snap context, built for a computational methods course to demonstrate software engineering best practices.
+              Dictionary-based NLP analysis measuring hard and soft criticism in EU Progress Reports across ten candidate countries from 2019–2025, finding that judiciary and anti-corruption paragraphs draw the harshest language while country-level tone differences persist after controlling for topic and time.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> NFL play-by-play data from 2021–2023 seasons with pre-snap situational features.</li>
-              <li><strong>Methods:</strong> Feature engineering pipeline, simple ML classifiers, comprehensive unit testing, modular code architecture.</li>
-              <li><strong>Focus:</strong> Emphasizes production-quality code—full feature libraries, testing suites, and deployment—over advanced modeling given data constraints.</li>
+              <li><strong>Data:</strong> 26,768 paragraph-level observations scraped from EU Enlargement and Eastern Neighbourhood Department reports for Albania, Bosnia, Georgia, Kosovo, Moldova, Montenegro, North Macedonia, Serbia, Turkey, and Ukraine.</li>
+              <li><strong>Methods:</strong> EPU-style dictionary scoring normalized per 1,000 words, logistic and OLS regression models with country fixed effects and topic composition controls.</li>
+              <li><strong>Key Findings:</strong> Turkey receives the harshest language in the sample; Serbia the softest. No systematic shift in criticism after Russia's 2022 invasion of Ukraine, suggesting geopolitical calibration predates the war.</li>
             </ul>
-
-            <!-- PDF preview (same structure as Go Ball card) -->
-            <div class="pdf-thumbnail" data-pdf="docs/nfl_playcaller_screenshot.pdf">
+            <div class="pdf-thumbnail" data-pdf="docs/EU_Expansion_Text_Analysis_Final.pdf">
               <canvas></canvas>
               <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
-
             <div class="card-links">
-              <a href="https://github.com/samuelfraley-bse/nflrunpass" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="https://nfl-playcaller.vercel.app/" target="_blank" rel="noreferrer">Live app</a>
-              <a href="docs/nfl_run_pass_summary_v2.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
+              <a href="docs/EU_Expansion_Text_Analysis_Final.pdf" target="_blank" rel="noreferrer">Paper (PDF)</a>
             </div>
           </article>
 
-          <!-- Go Ball Analysis / Big Data Bowl -->
-          <article class="card">
-            <h3>Go Ball Analysis – 2026 NFL Big Data Bowl</h3>
-            <p class="card-subtitle">Route concepts · Coverage strategies · Tournament project</p>
-            <p>
-              Analysis of how defenses defend deep vertical "go" routes and how offenses adjust route stems, spacing, and timing to attack different coverage structures.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> Open Big Data Bowl tracking data for passing plays with vertical concepts.</li>
-              <li><strong>Methods:</strong> Route labeling, separation and leverage metrics, coverage identification heuristics, outcome modeling.</li>
-              <li><strong>Goal:</strong> Quantify how defensive structures influence the success of deep routes and identify tendencies teams can exploit.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/go_ball_analysis.pdf">
-              <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
-            </div>
-            <div class="card-links">
-              <a href="https://github.com/samuelfraley-bse/go-ball-portfolio" target="_blank" rel="noreferrer">Code (GitHub)</a>
-              <a href="docs/go_ball_analysis.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
-            </div>
-	          </article>
-        </div>
-
-        <!-- GIS & Mobility -->
-        <h3 style="margin-top:2.5rem;">GIS & Mobility</h3>
-        <div class="grid">
           <!-- Transit logger app -->
           <article class="card">
             <h3>moveBSE – Barcelona Transit Logger</h3>
@@ -179,7 +177,7 @@
             </div>
           </article>
 
-           <article class="card">
+          <article class="card">
             <h3>BCN Kebab x Nightlife</h3>
             <p class="card-subtitle">Digital Mapping · OSM Data · For Fun</p>
             <p>
@@ -189,7 +187,7 @@
               <li><strong>Data:</strong> OSM via Overpass API</li>
               <li><strong>Results:</strong> Tree network, radius visuals, counts, etc</li>
             </ul>
-             <div class="pdf-thumbnail" data-pdf="docs/bcnkebabclub.pdf">
+            <div class="pdf-thumbnail" data-pdf="docs/bcnkebabclub.pdf">
               <canvas></canvas>
               <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
@@ -198,16 +196,6 @@
             </div>
           </article>
 
-          
-
-        </div>
-
-        <!-- Older Work / Economics Research -->
-        <h3 style="margin-top:2.5rem;">Older Work – Economics & Policy Research</h3>
-        <p class="section-intro">
-          Research briefs and analysis from my time at Philadelphia Works, focusing on labor markets, workforce development, and regional economics.
-        </p>
-        <div class="grid">
           <!-- LODES Commuting Analysis -->
           <article class="card">
             <h3>Mapping Commuting Patterns in Philadelphia</h3>
@@ -250,8 +238,6 @@
             </div>
           </article>
 
-         
-         
         </div>
       </div>
     </section>
@@ -308,7 +294,7 @@
           I'm a data scientist focused on decision-making problems — using statistical modeling, spatial analysis, and clear communication to help teams act on their data.
         </p>
         <p>
-          I grew up in the San Francisco Bay Area, where I played college football as a linebacker and longsnapper at <strong>Foothill College</strong>. 
+          I grew up in the San Francisco Bay Area, where I played college football as a linebacker and longsnapper at <strong>Foothill College</strong>.
           I later transferred to <strong>Temple University</strong> in Philadelphia to continue playing and finish my degree.
           I'm currently studying in the <strong>Master's in Data Science for Decision Making</strong> program at the
           <strong>Barcelona School of Economics</strong>, where my coursework includes causal inference, machine learning, deep learning, and econometrics.
