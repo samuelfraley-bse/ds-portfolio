@@ -20,145 +20,102 @@
         <a href="ai.html">How I Use AI</a>
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-   <!-- Hero -->
-<section class="hero">
-  <div class="container">
 
-    <div class="hero-profile">
-      <img
-        src="images/fraley_headshot.jpg"
-        alt="Headshot of Samuel Fraley"
-        class="hero-headshot"
-      >
-      <div class="hero-text">
-        <h1>Samuel Fraley</h1>
-        <p class="hero-tagline">
-          Temple football alum and former NFL Next Gen Stats researcher, now studying Data Science in Barcelona.
-        </p>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-profile">
+            <img
+              src="images/fraley_headshot.jpg"
+              alt="Headshot of Samuel Fraley"
+              class="hero-headshot"
+            >
+            <div class="hero-text">
+              <h1>Samuel Fraley</h1>
+              <p class="hero-tagline">
+                Temple football alum and former NFL Next Gen Stats researcher, now studying Data Science in Barcelona.
+              </p>
+            </div>
+          </div>
+          <div class="hero-links">
+            <a class="btn" href="https://github.com/samuelfraley-bse" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn-outline" href="https://www.linkedin.com/in/sam-fraley-4a6681166/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn-outline" href="docs/Samuel_Fraley_CV_BSE.pdf" target="_blank" rel="noreferrer">CV</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="hero-links">
-      <a class="btn" href="https://github.com/samuelfraley-bse" target="_blank" rel="noreferrer">GitHub</a>
-      <a class="btn-outline" href="https://www.linkedin.com/in/sam-fraley-4a6681166/" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a class="btn-outline" href="docs/Samuel_Fraley_CV_BSE.pdf" target="_blank" rel="noreferrer">CV</a>
-    </div>
-
-    <p class="section-intro" style="margin-top:1.25rem; max-width:38rem;">
-      I've worked across public policy and professional sports, and I'm especially excited about roles with teams or organizations that care about rigorous, decision-focused analytics.
-    </p>
-
-  </div>
-</section>
+    </section>
 
     <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Selected Projects</h2>
-        <p class="section-intro">
-          Work spanning sports analytics, NLP, GIS, and applied economics.
-        </p>
+        <p class="section-intro">Work spanning sports analytics, NLP, GIS, and applied economics.</p>
 
         <!-- Sports & NFL Analytics -->
-        <h3 style="margin-top:1.75rem;">Sports & NFL Analytics</h3>
+        <h3 class="projects-subheading">Sports & NFL Analytics</h3>
         <div class="grid">
 
           <article class="card">
             <h3>Temple Roster Analysis</h3>
             <p class="card-subtitle">Roster construction · Player profiles · Program-level insights</p>
-            <p>
-              Uses the CFBD API and 247Sports recruiting data to analyze geographic pipelines and talent distribution across Temple's roster.
-            </p>
-            <div class="pdf-thumbnail" data-pdf="docs/TempleRoster.pdf">
+            <p>Uses the CFBD API and 247Sports recruiting data to analyze geographic pipelines and talent distribution across Temple's roster.</p>
+            <div class="pdf-crop" data-pdf="docs/TempleRoster.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/TempleRoster.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
             </div>
           </article>
 
-          <!-- Temple OL Rush Report -->
           <article class="card">
             <h3>Temple 2025 OL Pre-Season Report</h3>
             <p class="card-subtitle">OL scouting · Rushing offense · FBS benchmarking</p>
-            <p>
-              Pre-season report on Temple's offensive line using unit continuity metrics, recruit additions, and FBS-wide rushing benchmarks to assess the run game outlook.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> CFBD rushing stats, OL continuity metrics, and Open Start Index across all FBS programs.</li>
-              <li><strong>Methods:</strong> FBS scatter plots comparing stuff rate, yards per carry, run rate, rush success rate, line yards, and power success.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/2025TempleOLRushReport.pdf">
+            <p>Pre-season report on Temple's offensive line using unit continuity metrics, recruit additions, and FBS-wide rushing benchmarks to assess the run game outlook.</p>
+            <div class="pdf-crop" data-pdf="docs/2025TempleOLRushReport.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/2025TempleOLRushReport.pdf" target="_blank" rel="noreferrer">Report (PDF)</a>
             </div>
           </article>
 
-          <!-- AAC Recruiting & Portal Snapshot -->
           <article class="card">
             <h3>AAC 2026 Recruiting & Portal Snapshot</h3>
             <p class="card-subtitle">Recruiting analytics · Transfer portal · College football</p>
-            <p>
-              Visual snapshots of recruiting and transfer portal activity across AAC conference programs for the 2026 cycle, mapping high school recruit origins and portal entries and exits by position.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> 247Sports commit pages and CFBD transfer portal records.</li>
-              <li><strong>Methods:</strong> Choropleth maps of recruit origins, logo-annotated portal entry maps, and position-level entry vs. exit charts by program.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/aac_2026_recruiting_portal_assets_deck.pdf">
+            <p>Visual snapshots of recruiting and transfer portal activity across AAC programs for the 2026 cycle, mapping recruit origins and portal entries and exits by position.</p>
+            <div class="pdf-crop" data-pdf="docs/aac_2026_recruiting_portal_assets_deck.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/aac_2026_recruiting_portal_assets_deck.pdf" target="_blank" rel="noreferrer">Slide deck (PDF)</a>
             </div>
           </article>
 
-          <!-- Target Separation EDA – 2026 NFL Big Data Bowl -->
           <article class="card">
             <h3>Target Separation EDA - 2026 NFL Big Data Bowl</h3>
             <p class="card-subtitle">Player tracking · Ball-in-flight separation · EDA</p>
-            <p>
-              Exploratory analysis of receiver-defender separation at throw and arrival, examining how separation evolves while the ball is in the air.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> 2026 NFL Big Data Bowl player tracking data for pass plays with ball-in-flight segments.</li>
-              <li><strong>Methods:</strong> Event alignment around release and arrival, separation metrics at throw vs. catch, route- and matchup-level breakdowns, WR speed composites.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/target_separation_eda.pdf">
+            <p>Exploratory analysis of receiver-defender separation at throw and arrival, examining how separation evolves while the ball is in the air.</p>
+            <div class="pdf-crop" data-pdf="docs/target_separation_eda.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/target_separation_eda.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
             </div>
           </article>
 
-          <!-- NFL Player Load Data Exploration -->
           <article class="card">
             <h3>NFL Player Load Data Exploration</h3>
             <p class="card-subtitle">Player tracking · Data pipeline · Sports science</p>
-            <p>
-              End-to-end pipeline for ingesting and analyzing NFL 10Hz optical tracking data, built to demonstrate sports science monitoring at scale.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> 2021 NFL Big Data Bowl tracking data — 17M frames across 253 games and 1,303 players.</li>
-              <li><strong>Methods:</strong> Bronze/Silver/Gold medallion architecture (Parquet + DuckDB), speed zone profiling, mechanical load, HSR distance, and Acute Chronic Workload Ratio (ACWR) by position.</li>
-              <li><strong>Output:</strong> Streamlit load monitoring dashboard and Jupyter notebook with athlete-level profiling and weekly load variation analysis.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/nfl_bdb_load_analysis.pdf">
+            <p>End-to-end pipeline for ingesting and analyzing NFL 10Hz optical tracking data, demonstrating a Bronze/Silver/Gold medallion architecture with speed zone, mechanical load, and ACWR outputs.</p>
+            <div class="pdf-crop" data-pdf="docs/nfl_bdb_load_analysis.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/nfl_bdb_load_analysis.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
@@ -168,44 +125,25 @@
         </div>
 
         <!-- Economics, NLP & GIS -->
-        <h3 style="margin-top:2rem;">Economics, NLP & GIS</h3>
-        <p class="section-intro">
-          Applied economics research, text analysis, and spatial work.
-        </p>
+        <h3 class="projects-subheading">Economics, NLP & GIS</h3>
         <div class="grid">
 
-          <!-- EU Progress Reports NLP -->
           <article class="card">
             <h3>Soft and Hard Criticism in EU Progress Reports</h3>
             <p class="card-subtitle">NLP · EU enlargement · Panel data</p>
-            <p>
-              Dictionary-based NLP analysis measuring hard and soft criticism in EU Progress Reports across ten candidate countries from 2019 to 2025.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> Paragraph-level observations scraped from EU Enlargement reports for Albania, Bosnia, Georgia, Kosovo, Moldova, Montenegro, North Macedonia, Serbia, Turkey, and Ukraine.</li>
-              <li><strong>Methods:</strong> EPU-style dictionary scoring normalized per 1,000 words, logistic and OLS regressions with country fixed effects and topic composition controls.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/EU_Expansion_Text_Analysis_Final.pdf">
+            <p>Dictionary-based NLP analysis measuring hard and soft criticism in EU Progress Reports across ten candidate countries from 2019 to 2025.</p>
+            <div class="pdf-crop" data-pdf="docs/EU_Expansion_Text_Analysis_Final.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/EU_Expansion_Text_Analysis_Final.pdf" target="_blank" rel="noreferrer">Paper (PDF)</a>
             </div>
           </article>
 
-          <!-- Transit logger app -->
           <article class="card">
             <h3>moveBSE - Barcelona Transit Logger</h3>
             <p class="card-subtitle">Full-stack app · React + Supabase · Offline-first</p>
-            <p>
-              A transit logging app for tracking metro journeys across Barcelona, with personal dashboards, leaderboards, and a year-in-review summary.
-            </p>
-            <ul class="details">
-              <li><strong>Stack:</strong> React frontend, Supabase backend for user authentication and data storage, deployed on Vercel.</li>
-              <li><strong>Challenges:</strong> Offline loading and syncing for use in metro tunnels with limited service, dynamic state management, multi-user authentication.</li>
-              <li><strong>Features:</strong> Trip logging, personal dashboards with commute stats and CO₂ savings, tap location mapping, and social leaderboard comparisons.</li>
-            </ul>
+            <p>A transit logging app for tracking metro journeys across Barcelona, with personal dashboards, leaderboards, and a year-in-review summary.</p>
             <div class="img-thumbnail">
               <img src="images/transit_logger_dashboard.png" alt="Transit Logger Dashboard showing commute stats and Barcelona metro tap locations">
             </div>
@@ -217,57 +155,34 @@
 
           <article class="card">
             <h3>BCN Kebab x Nightlife</h3>
-            <p class="card-subtitle">Digital Mapping · OSM Data · For Fun</p>
-            <p>
-              Two import locations for grad students in Barcelona. Pulled OSM data and made some maps.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> OSM via Overpass API</li>
-              <li><strong>Results:</strong> Tree network, radius visuals, counts, etc</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/bcnkebabclub.pdf">
+            <p class="card-subtitle">Digital mapping · OSM data · For fun</p>
+            <p>Two important locations for grad students in Barcelona. Pulled OSM data via Overpass API and built network and radius visualizations.</p>
+            <div class="pdf-crop" data-pdf="docs/bcnkebabclub.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/bcnkebabclub.pdf" target="_blank" rel="noreferrer">Visualizations (PDF)</a>
             </div>
           </article>
 
-          <!-- LODES Commuting Analysis -->
           <article class="card">
             <h3>Commuting Patterns in Philadelphia</h3>
             <p class="card-subtitle">Census LODES · Regional mobility · Workforce flows</p>
-            <p>
-              Analysis of home-to-work commuting across the 11-county Philadelphia metro area using Census LEHD Origin-Destination data.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> Census LODES at census tract level across the Philadelphia MSA.</li>
-              <li><strong>Methods:</strong> Spatial aggregation, multiline feature construction, demographic breakdowns by age, income, and industry, and interactive dashboard design in ArcGIS Online.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/lodes.pdf">
+            <p>Analysis of home-to-work commuting across the 11-county Philadelphia metro area using Census LEHD Origin-Destination data and ArcGIS Online.</p>
+            <div class="pdf-crop" data-pdf="docs/lodes.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/lodes.pdf" target="_blank" rel="noreferrer">Research brief (PDF)</a>
             </div>
           </article>
 
-          <!-- Inflation Analysis -->
           <article class="card">
             <h3>Philadelphia Inflation and the 2022 Recovery</h3>
             <p class="card-subtitle">Economic indicators · Time series · Policy analysis</p>
-            <p>
-              Analysis of Philadelphia's inflation trends during the 2022 recovery, comparing local CPI to national patterns across sectors.
-            </p>
-            <ul class="details">
-              <li><strong>Data:</strong> BLS Consumer Price Index for the Philadelphia metro area and comparison cities.</li>
-              <li><strong>Methods:</strong> Year-over-year change calculations, sector decomposition (food, energy, services, core goods), and cross-market comparisons alongside labor market indicators.</li>
-            </ul>
-            <div class="pdf-thumbnail" data-pdf="docs/inflation22.pdf">
+            <p>Analysis of Philadelphia's inflation trends during the 2022 recovery, comparing local CPI to national patterns with sector decomposition and labor market indicators.</p>
+            <div class="pdf-crop" data-pdf="docs/inflation22.pdf">
               <canvas></canvas>
-              <div class="pdf-thumbnail-loading">Loading preview...</div>
             </div>
             <div class="card-links">
               <a href="docs/inflation22.pdf" target="_blank" rel="noreferrer">Economic brief (PDF)</a>
@@ -282,80 +197,41 @@
     <section id="skills" class="section section-alt">
       <div class="container">
         <h2>Skills</h2>
-        <div class="skills-grid">
-          <div>
-            <h3>Languages & Tools</h3>
-            <ul>
-              <li>Python (pandas, NumPy, scikit-learn)</li>
-              <li>R (dplyr, ggplot2)</li>
-              <li>SQL</li>
-              <li>ArcGIS and spatial analysis tools</li>
-              <li>Git & GitHub</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Data & Modeling</h3>
-            <ul>
-              <li>Exploratory data analysis & feature engineering</li>
-              <li>Predictive modeling and model comparison</li>
-              <li>Spatial and temporal / tracking data analysis</li>
-              <li>Panel data / longitudinal analysis</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Visualization & Reporting</h3>
-            <ul>
-              <li>Dashboards and reporting for non-technical stakeholders</li>
-              <li>Clear data storytelling and research briefs</li>
-              <li>Experimentation and results communication</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Domains</h3>
-            <ul>
-              <li>Sports analytics & NFL tracking data</li>
-              <li>Urban mobility & GIS</li>
-              <li>Workforce, economic development, and public policy</li>
-            </ul>
-          </div>
+        <div class="skills-inline">
+          <p><strong>Languages & Tools</strong> — Python (pandas, NumPy, scikit-learn), R (dplyr, ggplot2), SQL, ArcGIS, Git</p>
+          <p><strong>Modeling</strong> — EDA, feature engineering, predictive modeling, spatial/tracking data analysis, panel data</p>
+          <p><strong>Visualization</strong> — Dashboards and reporting for non-technical stakeholders, data storytelling, research briefs</p>
+          <p><strong>Domains</strong> — Sports analytics & NFL tracking data, urban mobility & GIS, workforce and public policy</p>
         </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- About + Contact -->
     <section id="about" class="section">
       <div class="container">
-        <h2>About</h2>
-        <p>
-          I'm a data scientist focused on decision-making problems — using statistical modeling, spatial analysis, and clear communication to help teams act on their data.
-        </p>
-        <p>
-          I grew up in the San Francisco Bay Area, where I played college football as a linebacker and longsnapper at <strong>Foothill College</strong>.
-          I later transferred to <strong>Temple University</strong> in Philadelphia to continue playing and finish my degree.
-          I'm currently studying in the <strong>Master's in Data Science for Decision Making</strong> program at the
-          <strong>Barcelona School of Economics</strong>, where my coursework includes causal inference, machine learning, deep learning, and econometrics.
-        </p>
-        <p>
-          Before starting my Master's, I lived in Los Angeles and worked as a <strong>Next Gen Stats Research Analyst at the NFL</strong>, developing dashboards and models on player tracking data,
-          and as a <strong>data analyst on workforce and economic development projects</strong>, supporting public-sector and social impact organizations with analytics and visualization.
-        </p>
+        <div class="about-contact-row">
+
+          <div class="about-col">
+            <h2>About</h2>
+            <p>I'm a data scientist focused on decision-making problems — using statistical modeling, spatial analysis, and clear communication to help teams act on their data.</p>
+            <p>I grew up in the San Francisco Bay Area, where I played college football as a linebacker and longsnapper at <strong>Foothill College</strong>. I later transferred to <strong>Temple University</strong> in Philadelphia to continue playing and finish my degree. I'm currently studying in the <strong>Master's in Data Science for Decision Making</strong> program at the <strong>Barcelona School of Economics</strong>, where my coursework includes causal inference, machine learning, deep learning, and econometrics.</p>
+            <p>Before starting my Master's, I lived in Los Angeles and worked as a <strong>Next Gen Stats Research Analyst at the NFL</strong>, developing dashboards and models on player tracking data, and as a <strong>data analyst on workforce and economic development projects</strong>, supporting public-sector and social impact organizations with analytics and visualization.</p>
+          </div>
+
+          <div class="contact-col">
+            <h2>Contact</h2>
+            <p>Open to data science roles with teams, leagues, or international organizations, and collaborations on sports analytics and public-policy projects.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:samuel.fraley@bse.eu">samuel.fraley@bse.eu</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sam-fraley-4a6681166/" target="_blank" rel="noreferrer">Connect on LinkedIn</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/samuelfraley-bse" target="_blank" rel="noreferrer">View my code</a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Feel free to reach out about data science roles with teams, leagues, or international organizations, or for collaborations on sports analytics and public-policy projects.
-        </p>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:samuel.fraley@bse.eu">samuel.fraley@bse.eu</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sam-fraley-4a6681166/" target="_blank" rel="noreferrer">Connect on LinkedIn</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/samuelfraley-bse" target="_blank" rel="noreferrer">View my code</a></li>
-        </ul>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
@@ -364,53 +240,34 @@
     </div>
   </footer>
 
-  <!-- PDF.js library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-
   <script>
-    // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // PDF Thumbnail functionality - renders previews on page load
-    (function() {
-      // Set PDF.js worker
-      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    // Zoomed-crop PDF previews
+    (function () {
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-      // Find all PDF thumbnail containers and render them
-      document.querySelectorAll('.pdf-thumbnail').forEach(container => {
-        const pdfUrl = container.getAttribute('data-pdf');
-        const canvas = container.querySelector('canvas');
-        const loadingEl = container.querySelector('.pdf-thumbnail-loading');
-        const ctx = canvas.getContext('2d');
+      document.querySelectorAll('.pdf-crop').forEach(function (container) {
+        var pdfUrl = container.getAttribute('data-pdf');
+        var canvas = container.querySelector('canvas');
+        var ctx = canvas.getContext('2d');
 
-        // Load and render PDF thumbnail
-        pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
-          // Get page 1 (or page 5 if available for longer documents)
-          const pageNum = pdf.numPages >= 5 ? 5 : 1;
+        pdfjsLib.getDocument(pdfUrl).promise.then(function (pdf) {
+          // Pick a page that's likely to have a visual (chart/map)
+          var pageNum = pdf.numPages >= 3 ? 2 : 1;
           return pdf.getPage(pageNum);
-        }).then(function(page) {
-          // Calculate scale to fit thumbnail size
-          const viewport = page.getViewport({ scale: 1 });
-          const maxWidth = 280;
-          const maxHeight = 180;
-          const scale = Math.min(maxWidth / viewport.width, maxHeight / viewport.height);
-          const scaledViewport = page.getViewport({ scale: scale });
-
-          canvas.height = scaledViewport.height;
-          canvas.width = scaledViewport.width;
-
-          const renderContext = {
-            canvasContext: ctx,
-            viewport: scaledViewport
-          };
-
-          return page.render(renderContext).promise;
-        }).then(function() {
-          loadingEl.style.display = 'none';
+        }).then(function (page) {
+          // Render at 2x scale — the container will crop it down to a strip
+          var viewport = page.getViewport({ scale: 2.0 });
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          return page.render({ canvasContext: ctx, viewport: viewport }).promise;
+        }).then(function () {
           canvas.style.display = 'block';
-        }).catch(function(error) {
-          console.error('Error loading PDF:', error);
-          loadingEl.textContent = 'Preview unavailable';
+        }).catch(function () {
+          container.style.display = 'none';
         });
       });
     })();
