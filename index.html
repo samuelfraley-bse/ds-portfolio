@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Samuel Fraley – Data Science Portfolio</title>
+  <title>Samuel Fraley | Data Science Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Data science portfolio for Samuel Fraley, focusing on sports analytics, GIS, and applied economics.">
   <link rel="stylesheet" href="styles.css">
@@ -86,15 +86,14 @@
 
           <!-- Temple OL Rush Report -->
           <article class="card">
-            <h3>Temple 2025 Offensive Line Pre-Season Report</h3>
+            <h3>Temple 2025 OL Pre-Season Report</h3>
             <p class="card-subtitle">OL scouting · Rushing offense · FBS benchmarking</p>
             <p>
-              Pre-season report on Temple's offensive line heading into 2025, combining unit continuity analysis, recruit additions, and FBS-wide rushing benchmarks to assess the ceiling and risks of the run game.
+              Pre-season report on Temple's offensive line using unit continuity metrics, recruit additions, and FBS-wide rushing benchmarks to assess the run game outlook.
             </p>
             <ul class="details">
-              <li><strong>Continuity:</strong> Temple returned 75% of OL starts (1st AAC, 16th nationally) with a 23.1 Open Start Index, signaling returning production.</li>
-              <li><strong>2025 context:</strong> Temple ran at a 51% rate (highest since 2016) and improved rush success rate to 47%, but ranked bottom-3 in the AAC in line yards, power success (55.3%), and total PPA.</li>
-              <li><strong>Visuals:</strong> FBS scatter plots comparing stuff rate vs. yards per carry, run rate vs. rush success rate, and line yards vs. power success across all FBS programs.</li>
+              <li><strong>Data:</strong> CFBD rushing stats, OL continuity metrics, and Open Start Index across all FBS programs.</li>
+              <li><strong>Methods:</strong> FBS scatter plots comparing stuff rate, yards per carry, run rate, rush success rate, line yards, and power success.</li>
             </ul>
             <div class="pdf-thumbnail" data-pdf="docs/2025TempleOLRushReport.pdf">
               <canvas></canvas>
@@ -113,9 +112,8 @@
               Visual snapshots of recruiting and transfer portal activity across AAC conference programs for the 2026 cycle, mapping high school recruit origins and portal entries and exits by position.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> 247Sports team commit pages and CFBD transfer portal records, with local coordinate and logo caches.</li>
-              <li><strong>Methods:</strong> Choropleth maps of signed recruit origins by state, logo-annotated portal entry maps by origin school, and position-level bar charts comparing entries vs. exits.</li>
-              <li><strong>Coverage:</strong> Individual slides built for Temple, Tulane, and other AAC programs — each showing the full recruiting and portal picture for the cycle.</li>
+              <li><strong>Data:</strong> 247Sports commit pages and CFBD transfer portal records.</li>
+              <li><strong>Methods:</strong> Choropleth maps of recruit origins, logo-annotated portal entry maps, and position-level entry vs. exit charts by program.</li>
             </ul>
             <div class="pdf-thumbnail" data-pdf="docs/aac_2026_recruiting_portal_assets_deck.pdf">
               <canvas></canvas>
@@ -128,15 +126,14 @@
 
           <!-- Target Separation EDA – 2026 NFL Big Data Bowl -->
           <article class="card">
-            <h3>Target Separation & In-Flight Movement EDA – 2026 NFL Big Data Bowl</h3>
-            <p class="card-subtitle">Tracking data · Ball-in-flight separation · Exploratory research</p>
+            <h3>Target Separation EDA - 2026 NFL Big Data Bowl</h3>
+            <p class="card-subtitle">Player tracking · Ball-in-flight separation · EDA</p>
             <p>
-              Exploratory analysis of receiver–defender separation at the moment of throw and at arrival, focusing on how separation evolves while the ball is in the air.
+              Exploratory analysis of receiver-defender separation at throw and arrival, examining how separation evolves while the ball is in the air.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> 2026 NFL Big Data Bowl tracking sample for pass plays with ball-in-flight segments.</li>
-              <li><strong>Methods:</strong> Event alignment around release and arrival, separation metrics at throw vs. catch, change-in-separation distributions, route- and matchup-level breakdowns.</li>
-              <li><strong>Goal:</strong> Analyze how separation changes while the ball is in the air, combine speed metrics for wide recievers to better understand in-flight movement.</li>
+              <li><strong>Data:</strong> 2026 NFL Big Data Bowl player tracking data for pass plays with ball-in-flight segments.</li>
+              <li><strong>Methods:</strong> Event alignment around release and arrival, separation metrics at throw vs. catch, route- and matchup-level breakdowns, WR speed composites.</li>
             </ul>
             <div class="pdf-thumbnail" data-pdf="docs/target_separation_eda.pdf">
               <canvas></canvas>
@@ -144,6 +141,27 @@
             </div>
             <div class="card-links">
               <a href="docs/target_separation_eda.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
+            </div>
+          </article>
+
+          <!-- NFL Player Load Data Exploration -->
+          <article class="card">
+            <h3>NFL Player Load Data Exploration</h3>
+            <p class="card-subtitle">Player tracking · Data pipeline · Sports science</p>
+            <p>
+              End-to-end pipeline for ingesting and analyzing NFL 10Hz optical tracking data, built to demonstrate sports science monitoring at scale.
+            </p>
+            <ul class="details">
+              <li><strong>Data:</strong> 2021 NFL Big Data Bowl tracking data — 17M frames across 253 games and 1,303 players.</li>
+              <li><strong>Methods:</strong> Bronze/Silver/Gold medallion architecture (Parquet + DuckDB), speed zone profiling, mechanical load, HSR distance, and Acute Chronic Workload Ratio (ACWR) by position.</li>
+              <li><strong>Output:</strong> Streamlit load monitoring dashboard and Jupyter notebook with athlete-level profiling and weekly load variation analysis.</li>
+            </ul>
+            <div class="pdf-thumbnail" data-pdf="docs/nfl_bdb_load_analysis.pdf">
+              <canvas></canvas>
+              <div class="pdf-thumbnail-loading">Loading preview...</div>
+            </div>
+            <div class="card-links">
+              <a href="docs/nfl_bdb_load_analysis.pdf" target="_blank" rel="noreferrer">Project write-up (PDF)</a>
             </div>
           </article>
 
@@ -159,14 +177,13 @@
           <!-- EU Progress Reports NLP -->
           <article class="card">
             <h3>Soft and Hard Criticism in EU Progress Reports</h3>
-            <p class="card-subtitle">NLP · Text mining · EU enlargement · Panel data</p>
+            <p class="card-subtitle">NLP · EU enlargement · Panel data</p>
             <p>
-              Dictionary-based NLP analysis measuring hard and soft criticism in EU Progress Reports across ten candidate countries from 2019–2025, finding that judiciary and anti-corruption paragraphs draw the harshest language while country-level tone differences persist after controlling for topic and time.
+              Dictionary-based NLP analysis measuring hard and soft criticism in EU Progress Reports across ten candidate countries from 2019 to 2025.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> 26,768 paragraph-level observations scraped from EU Enlargement and Eastern Neighbourhood Department reports for Albania, Bosnia, Georgia, Kosovo, Moldova, Montenegro, North Macedonia, Serbia, Turkey, and Ukraine.</li>
-              <li><strong>Methods:</strong> EPU-style dictionary scoring normalized per 1,000 words, logistic and OLS regression models with country fixed effects and topic composition controls.</li>
-              <li><strong>Key Findings:</strong> Turkey receives the harshest language in the sample; Serbia the softest. No systematic shift in criticism after Russia's 2022 invasion of Ukraine, suggesting geopolitical calibration predates the war.</li>
+              <li><strong>Data:</strong> Paragraph-level observations scraped from EU Enlargement reports for Albania, Bosnia, Georgia, Kosovo, Moldova, Montenegro, North Macedonia, Serbia, Turkey, and Ukraine.</li>
+              <li><strong>Methods:</strong> EPU-style dictionary scoring normalized per 1,000 words, logistic and OLS regressions with country fixed effects and topic composition controls.</li>
             </ul>
             <div class="pdf-thumbnail" data-pdf="docs/EU_Expansion_Text_Analysis_Final.pdf">
               <canvas></canvas>
@@ -179,10 +196,10 @@
 
           <!-- Transit logger app -->
           <article class="card">
-            <h3>moveBSE – Barcelona Transit Logger</h3>
-            <p class="card-subtitle">Full-stack app · React + Supabase · Offline-first design</p>
+            <h3>moveBSE - Barcelona Transit Logger</h3>
+            <p class="card-subtitle">Full-stack app · React + Supabase · Offline-first</p>
             <p>
-              A full-stack transit logging app for friends to track metro journeys across Barcelona, featuring real-time dashboards, leaderboards, and a "Spotify Wrapped"–style year-in-review summary.
+              A transit logging app for tracking metro journeys across Barcelona, with personal dashboards, leaderboards, and a year-in-review summary.
             </p>
             <ul class="details">
               <li><strong>Stack:</strong> React frontend, Supabase backend for user authentication and data storage, deployed on Vercel.</li>
@@ -219,15 +236,14 @@
 
           <!-- LODES Commuting Analysis -->
           <article class="card">
-            <h3>Mapping Commuting Patterns in Philadelphia</h3>
-            <p class="card-subtitle">Census LODES data · Regional mobility · Workforce flows</p>
+            <h3>Commuting Patterns in Philadelphia</h3>
+            <p class="card-subtitle">Census LODES · Regional mobility · Workforce flows</p>
             <p>
-              Comprehensive analysis of home-to-work commuting patterns across the 11-county Philadelphia metropolitan area using Census LEHD Origin-Destination data, visualizing worker flows and demographic characteristics of commuters.
+              Analysis of home-to-work commuting across the 11-county Philadelphia metro area using Census LEHD Origin-Destination data.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> Census LODES (LEHD Origin-Destination Employment Statistics) at census tract level, covering 4.5+ million jobs and 900,000+ commute paths.</li>
-              <li><strong>Methods:</strong> Spatial aggregation to tract and county levels, multiline feature construction, demographic breakdowns by age, income, and industry sector, interactive dashboard design in ArcGIS Online.</li>
-              <li><strong>Key Findings:</strong> Philadelphia County had 525,000 workplace jobs with 44% filled by commuters from other counties; Montgomery County showed highest commuter dependency at 55%.</li>
+              <li><strong>Data:</strong> Census LODES at census tract level across the Philadelphia MSA.</li>
+              <li><strong>Methods:</strong> Spatial aggregation, multiline feature construction, demographic breakdowns by age, income, and industry, and interactive dashboard design in ArcGIS Online.</li>
             </ul>
             <div class="pdf-thumbnail" data-pdf="docs/lodes.pdf">
               <canvas></canvas>
@@ -240,15 +256,14 @@
 
           <!-- Inflation Analysis -->
           <article class="card">
-            <h3>Rising Inflation and the Current Recovery</h3>
+            <h3>Philadelphia Inflation and the 2022 Recovery</h3>
             <p class="card-subtitle">Economic indicators · Time series · Policy analysis</p>
             <p>
-              Analysis of Philadelphia's inflation trends during the 2022 economic recovery, comparing local Consumer Price Index data to national patterns and examining sector-specific price changes alongside labor market indicators.
+              Analysis of Philadelphia's inflation trends during the 2022 recovery, comparing local CPI to national patterns across sectors.
             </p>
             <ul class="details">
-              <li><strong>Data:</strong> BLS Consumer Price Index data for Philadelphia metro area and comparison cities.</li>
-              <li><strong>Methods:</strong> Year-over-year change calculations, sector decomposition (food, energy, services, core goods), cross-market comparisons.</li>
-              <li><strong>Key Findings:</strong> Philadelphia inflation reached 8.8% YoY in June 2022, with energy prices rising 36% and services inflation accelerating to 6.4%, despite falling unemployment and 5.3% wage growth.</li>
+              <li><strong>Data:</strong> BLS Consumer Price Index for the Philadelphia metro area and comparison cities.</li>
+              <li><strong>Methods:</strong> Year-over-year change calculations, sector decomposition (food, energy, services, core goods), and cross-market comparisons alongside labor market indicators.</li>
             </ul>
             <div class="pdf-thumbnail" data-pdf="docs/inflation22.pdf">
               <canvas></canvas>
